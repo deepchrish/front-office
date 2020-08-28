@@ -93,9 +93,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -124,9 +124,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -155,9 +155,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -186,9 +186,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -217,9 +217,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -248,9 +248,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -279,9 +279,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -310,9 +310,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -341,9 +341,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
@@ -372,9 +372,9 @@
                             <td>Mar 5, 2019</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
-                                    <a class="fo-btn-edit" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del" title="Delete" href="#"><i class="ti-trash"></i></a>
-                                    <div class="dropdown">
+                                    <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <div class="dropdown px-2">
                                         <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
