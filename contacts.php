@@ -43,7 +43,9 @@
                 <div class="px-3"><a href="#"><i class="ti-printer mr-2"></i>Print</a></div>
                 <div class="px-3"><a href="#"><i class="ti-import mr-2"></i>Import</a></div>
                 <div class="pl-3 dropdown">
-                    <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ti-settings mr-2"></i>Customize<i class="ml-1 ti-angle-down"></i>
+                    <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="ti-settings mr-2"></i>Customize<i
+                            class="ml-1 ti-angle-down"></i>
                     </a>
                     <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Customize Columns</a>
@@ -77,6 +79,32 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <th></th>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="search" class="form-control" placeholder="Search">
+                            </td>
+                            <td>
+                                <input type="date" class="form-control" placeholder="Search">
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <th>
                                 <label class="customcheckbox">
                                     <input type="checkbox" class="listCheckbox" />
@@ -94,9 +122,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -125,9 +156,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -156,9 +190,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -187,9 +224,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -218,9 +258,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -249,9 +292,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -280,9 +326,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -311,9 +360,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -342,9 +394,12 @@
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -369,13 +424,16 @@
                             <td>919-9875420</td>
                             <td>919-9875420</td>
                             <td>Mar 5, 2019</td>
-                            <td>Mar 5, 2019</td>
+                            <td>Mar 5, 2018</td>
                             <td>
                                 <div class="fo-tbl-action d-flex justify-content-between">
                                     <a class="fo-btn-edit px-2" title="Edit" href="#"><i class="ti-pencil"></i></a>
-                                    <a class="fo-btn-del px-2" title="Delete" href="#"><i class="ti-trash"></i></a>
+                                    <a class="fo-btn-del px-2" title="Delete" href="#" data-toggle="modal"
+                                        data-target="#deletecontact"><i class="ti-trash"></i></a>
                                     <div class="dropdown px-2">
-                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="ml-1 ti-more-alt"></i>
+                                        <a class="fo-btn-more" title="More options" class="dropdown-toggle" href=""
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                                class="ml-1 ti-more-alt"></i>
                                         </a>
                                         <div class="fo-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#">Customize Columns</a>
@@ -411,6 +469,34 @@
                         <a href="#" class="ml-2"><i class="ti-angle-right"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="deletecontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">How would you like to delete "Sharon Vinson"?</h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+            </div>
+            <div class="modal-body">
+                <div class="custom-control custom-radio my-3">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" select="selected">
+                    <label class="custom-control-label" for="customRadio1">Delete this contact with the ability to recover from recycle bin within 30 days</label>
+                </div>
+                <div class="custom-control custom-radio my-3">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Delete this contact and all its associated contacts permanently</label>
+                </div>
+            </div>
+            <div class="modal-footer pb-4 pt-0">
+                <button type="button" class="btn fo-btn-primary">Save</button>
+                <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
