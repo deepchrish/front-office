@@ -18,8 +18,112 @@
 
 <!-- Container fluid  -->
 <div class="container-fluid">
-    <div class="row">
-    </div>
+    <h5 class="my-3">Create Contact</h5>
+    <form class="mt-2">
+        <div class="fo-form form-row">
+            <!-- Contact Name -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputEmail4">Contact Name</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter">
+            </div>
+            <!-- Contact Name -->
+
+            <!-- Company -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Company</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- Company -->
+
+            <!-- Title -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Title</label>
+                <select class="form-control" placeholder="Select">
+                    <option>Select</option>
+                </select>
+            </div>
+            <!-- Title -->
+
+            <!-- Business Type -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Business Type</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- Business Type -->
+
+            <!-- Phone No. -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Phone No.</label>
+                <input type="tel" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- Phone No. -->
+
+            <!-- Mobile No. -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Mobile No.</label>
+                <input type="tel" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- Mobile No. -->
+
+            <!-- FAX -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">FAX</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- FAX -->
+
+            <!-- Email -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Email</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- Email -->
+
+            <!-- Address -->
+            <div class="form-group col-md-12 py-2">
+                <label for="inputPassword4">Address</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <!-- Address -->
+
+            <!-- City -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">City</label>
+                <select class="form-control" placeholder="Select">
+                    <option>Select</option>
+                </select>
+            </div>
+            <!-- City -->
+
+            <!-- State -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">State</label>
+                <select class="form-control" placeholder="Select">
+                    <option>Select</option>
+                </select>
+            </div>
+            <!-- State -->
+
+            <!-- ZIP -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">ZIP</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Enter">
+            </div>
+            <!-- ZIP -->
+            
+            <!-- Country -->
+            <div class="form-group col-md-3 py-2">
+                <label for="inputPassword4">Country</label>
+                <select class="form-control" placeholder="Select">
+                    <option>Select</option>
+                </select>
+            </div>
+            <!-- Country -->
+        </div>
+        <!-- Save Button -->
+        <button type="submit" class="btn fo-btn-primary">Save</button>
+        <!-- Save Button -->
+    </form>
 </div>
 <!-- End Container fluid  -->
 <?php include('footer.php'); ?>
