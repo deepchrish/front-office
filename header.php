@@ -11,6 +11,9 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <title>Front Office</title>
+    <!-- other CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/quill/dist/quill.snow.css">
     <!-- Custom CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">

@@ -20,7 +20,17 @@
 <script src="js/sidebarmenu.js"></script>
 <!--Custom JavaScript -->
 <script src="js/custom.min.js"></script>
-<!--This page JavaScript -->
+<!-- Select 2  -->
+<script src="assets/libs/select2/dist/js/select2.full.min.js"></script>
+<script src="assets/libs/select2/dist/js/select2.min.js"></script>
+<!-- Editor -->
+<script src="assets/libs/quill/dist/quill.min.js"></script>
+<script>
+    $(".select2").select2();
+    var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+</script>
 </body>
 
 </html>

@@ -46,6 +46,10 @@ h5 {
 	border: 1px solid #ccc;
 }
 
+button:focus {
+	outline: 0px;
+}
+
 .fo-btn-primary .mdi {
 	font-size: 16px;
 	position: relative;
@@ -68,6 +72,7 @@ select.form-control:not([size]):not([multiple]) {
 	color: #fff;
 	font-size: 14px;
 	padding: .3rem .5rem;
+	position: relative;
 }
 
 .fo-form .form-control {
@@ -76,6 +81,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .fo-form .form-group label {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+label {
 	font-weight: 400;
 	font-size: 14px;
 }
@@ -119,10 +129,127 @@ select.form-control:not([size]):not([multiple]) {
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
 	background-color: #778698;
 }
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+	color: transparent;
+	background: none;
+	z-index: 1;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+	color: transparent;
+	background: none;
+	z-index: 1;
+}
+input[type="date"]:before {
+	color: transparent;
+	background: none;
+	display: inline-block;
+	/* font-family: 'FontAwesome'; */
+	font-family: 'themify';
+	content: "\e6b6";
+	/* This is the calendar icon in FontAwesome */
+	/* width: 15px;
+	height: 20px; */
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+}
+input[type="time"]:before {
+	color: transparent;
+	background: none;
+	display: inline-block;
+	/* font-family: 'FontAwesome'; */
+	font-family: 'themify';
+	content: "\e72b";
+	/* This is the calendar icon in FontAwesome */
+	/* width: 15px;
+	height: 20px; */
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	color: #fff;
+}
 /* Bootstrap form control */
+/* select 2 START */
+.select2-container--default .select2-selection--multiple {
+	background-color: #344153;
+	border: solid #ced4da 1px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+	background-color: #2678d2;
+}
+
+.select2-dropdown {
+	background-color: #344153;
+	border: 1px solid #aaa;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #efefef;
+	color: #132539;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	background-color: #2678d2;
+	border-color: #2678d2;
+}
+
+.select2-results__option {
+	font-size: 14px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	margin-right: 3px;
+	margin-top: 5px;
+	padding: 0 3px;
+	font-size: 14px;
+}
+
+/* select 2 END */
+/* quil editor START*/
+.fo-editor {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	/* background-color: #132539; */
+	background-clip: border-box;
+	/* border: 1px solid rgba(0, 0, 0, .125); */
+	border-radius: .25rem;
+}
+
+.ql-toolbar.ql-snow {
+	background: #fff;
+}
+
+.ql-container.ql-snow {
+	background: #344153;
+	border-radius: 3px;
+}
+
+/* quil editor END*/
 
 /* Modal */
+.close {
+	color: #fff;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.close:focus,
+.close:hover {
+	color: #fff;
+}
+
 .modal-header {
 	padding: 12px;
 	background: #394759;
@@ -240,6 +367,35 @@ select.form-control:not([size]):not([multiple]) {
 /* multi checkbox custom CSS END */
 
 /* contact page STRAT */
+.fo-shortcut {
+	list-style: none;
+	padding:0;
+}
+
+.fo-shortcut li {
+	display: inline-block;
+}
+
+.fo-shortcut li a {
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 14px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.fo-shortcut li a .mdi {
+	font-size: 16px;
+	margin-right: 2px;
+}
+
+.fo-shortcut li a:hover,
+.fo-shortcut li a:focus {
+	background: #344153;
+	border-radius: 3px;
+}
 
 .fo-cont-action-btn a {
 	color: #ffffff;
@@ -365,19 +521,22 @@ select.form-control:not([size]):not([multiple]) {
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 2.5rem 2rem;
 }
-.fo-card span{
+
+.fo-card span {
 	display: block;
 	font-weight: 300;
 	color: #ccc;
 	font-size: 14px;
 }
-.fo-card p{
+
+.fo-card p {
 	font-weight: 400;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
 /* card */
+
 
 /* Responsive */
 
