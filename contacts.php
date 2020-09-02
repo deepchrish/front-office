@@ -12,7 +12,7 @@
                 </nav>
             </div>
         </div>
-        <div class="text-right col-4 col-lg-7 d-flex align-items-center justify-content-between py-3 py-lg-0">
+        <div class="text-right col-4 col-lg-7 d-flex align-items-center justify-content-end py-3 py-lg-0">
             <!-- <a class="btn fo-btn-primary" href="create-contact.php"><i class="mdi mdi-plus"></i>Create contact</a> -->
             <div class="d-none d-lg-inline-block">
                 <ul class="mb-0 fo-shortcut">
@@ -25,7 +25,7 @@
                     <li><a href="#"><i class="mdi mdi-email-outline"></i><span>E-Mail</span></a></li>
                 </ul>
             </div>
-            <div class="btn-group ml-auto">
+            <div class="btn-group ml-2">
                 <a href="create-contact.php" class="btn fo-btn-primary px-2">
                     <i class="mdi mdi-plus"></i> New
                 </a>
