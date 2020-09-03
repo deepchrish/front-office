@@ -40,7 +40,7 @@
                     <a class="dropdown-item" href="#">Company</a>
                     <a class="dropdown-item" href="#">Opportunity</a>
                     <div class="dropdown-divider m-0"></div>
-                    <a class="dropdown-item" href="#">Call</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addcall">Call</a>
                     <a class="dropdown-item" href="#">Meeting</a>
                     <a class="dropdown-item" href="#">To-Do</a>
                     <a class="dropdown-item" href="#">Other</a>
@@ -610,7 +610,6 @@
                             </div>
                         </div>
                     </div>
-
                 </form>
             </div>
             <div class="modal-footer pb-4 pt-0">
@@ -621,4 +620,296 @@
     </div>
 </div>
 <!-- Notes Modal END-->
+
+<!-- Call Modal START-->
+<div class="modal fade" id="addcall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Call</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="false">Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="recurrence-tab" data-toggle="tab" href="#recurrence" role="tab" aria-controls="recurrence" aria-selected="false">Recurrence</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                        <form>
+                            <div class="form-row pt-2">
+                                <div class="form-group col-12">
+                                    <label for="activity_type">Activity Type</label>
+                                    <select class="form-control" id="activity_type"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="CL">Call</option>
+                                        <option value="MG">Meeting</option>
+                                        <option value="TD">To-do</option>
+                                        <option value="AT">Appointment</option>
+                                        <option value="PA">Personal Activity</option>
+                                        <option value="VN">Vacation</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="startdate">Start Date</label>
+                                    <input type="date" class="form-control" id="startdate" placeholder="Date">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="enddate">End Date</label>
+                                    <input type="date" class="form-control" id="enddate" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="starttime">Start Time</label>
+                                    <input type="time" class="form-control" id="starttime" placeholder="Time">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="endtime">End Time</label>
+                                    <input type="time" class="form-control" id="endtime" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="duration">Duration</label>
+                                    <select class="form-control" id="duration"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="0">0 Minutes</option>
+                                        <option value="5">5 Minutes</option>
+                                        <option value="10">10 Minutes</option>
+                                        <option value="15">15 Minutes</option>
+                                        <option value="30">30 Minutes</option>
+                                        <option value="45">45 Minutes</option>
+                                        <option value="1">1 Hour</option>
+                                        <option value="2">2 Hours</option>
+                                        <option value="3">3 Hours</option>
+                                        <option value="8">8 Hours</option>
+                                        <option value="1">1 Day</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="30">30 Days</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="usebanner">
+                                        <label class="custom-control-label" for="usebanner">Use Banner</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-9">
+                                    <label for="schedule">Schedule With</label>
+                                    <select class="select2 form-control" multiple="multiple" id="schedule"
+                                        style="height: 36px;width: 100%;">
+                                        <option value="ONE">Test One</option>
+                                        <option value="TWO">Test Two</option>
+                                        <option value="THREE">Test Three</option>
+                                    </select>
+                                </div>
+                                <div class="align-items-end col-3 d-flex form-group">
+                                    <div class="dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="contacts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Contacts
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="contacts">
+                                        <a class="dropdown-item" href="#">Select Contacts</a>
+                                        <a class="dropdown-item" href="#">New Contact</a>
+                                        <a class="dropdown-item" href="#">My Record</a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="send_email">
+                                        <label class="custom-control-label" for="send_email">Send activity e-mail to contacts</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-10">
+                                    <label for="associate">Associate with</label>
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" aria-label="associate" aria-describedby="basic-addon1"  name="associate_with" style="height: 36px;width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="form-group col-2 align-items-end d-flex">
+                                    <a class="btn btn-secondary" href="#" role="button">......</a>
+                                    <!-- <button type="button" class="btn btn-secondary btn-sm"><a href="#">......</a></button> -->
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="regarding">Regarding</label>
+                                    <select class="form-control" id="regarding"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="#">Ask for the order</option>
+                                        <option value="BM">Breakfast Meeting</option>
+                                        <option value="CC">Cold Call</option>
+                                        <option value="CN">Contract Negotiations</option>
+                                        <option value="DN">Demonstration</option>
+                                        <option value="DM">Dinner Meeting</option>
+                                        <option value="FM">First Meeting</option>
+                                        <option value="FD">Follow-up on Delivery</option>
+                                        <option value="FP">Follow-up on Presentation</option>
+                                        <option value="IN">Introduction</option>
+                                        <option value="LM">Lunch Meeting</option>
+                                        <option value="PN">Presentation</option>
+                                        <option value="SC">Sales Call</option>
+                                        <option value="SP">Show New Products</option>
+                                        <option value="SM">Staff Meeting</option>
+                                        <option value="TS">Trade Show</option>
+                                        <option value="VN">Vacation</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="resources">Resources</label>
+                                    <select class="form-control" id="resources"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="ONE">Test One</option>
+                                        <option value="TWO">Test Two</option>
+                                        <option value="THREE">Test Three</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="location">Location</label>
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" aria-label="location" aria-describedby="basic-addon1"  name="location" style="height: 36px;width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="priority">Priority</label>
+                                    <select class="form-control" id="priority"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="HH">High</option>
+                                        <option value="MM">Medium</option>
+                                        <option value="LW">Low</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <div class="form-group">
+                                        <label for="hue-demo">Color</label>
+                                        <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left">
+                                            <input type="text" id="hue-demo" class="form-control demo minicolors-input" data-control="hue" value="#ff6161" size="7">
+                                            <span class="minicolors-swatch minicolors-sprite minicolors-input-swatch">
+                                                <span class="minicolors-swatch-color" style="background-color: rgb(204, 57, 57); opacity: 1;">
+                                                </span>
+                                            </span>
+                                            <div class="minicolors-panel minicolors-slider-hue" style="display: none;">
+                                                <div class="minicolors-slider minicolors-sprite">
+                                                    <div class="minicolors-picker" style="top: 150px;"></div>
+                                                </div>
+                                                <div class="minicolors-opacity-slider minicolors-sprite">
+                                                    <div class="minicolors-picker"></div>
+                                                </div>
+                                                <div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);">
+                                                    <div class="minicolors-grid-inner"></div>
+                                                    <div class="minicolors-picker" style="top: 29px; left: 108px;"><div>    
+                                                </div>
+                                            </div>
+                                        </div></div></div> 
+                                    </div>                              
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-8">
+                                    <label for="ring_alarm">Ring Alarm</label>
+                                    <select class="form-control" id="ring_alarm"
+                                      style="height: 36px;width: 100%;">
+                                        <option value="0">0 Minutes</option>
+                                        <option value="5">5 Minutes</option>
+                                        <option value="10">10 Minutes</option>
+                                        <option value="15">15 Minutes</option>
+                                        <option value="30">30 Minutes</option>
+                                        <option value="45">45 Minutes</option>
+                                        <option value="1">1 Hour</option>
+                                        <option value="2">2 Hours</option>
+                                        <option value="3">3 Hours</option>
+                                        <option value="8">8 Hours</option>
+                                        <option value="1">1 Day</option>
+                                        <option value="5">5 Days</option>
+                                        <option value="30">30 Days</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4 align-items-end d-flex">
+                                   <!-- <button type="button" class="btn btn-secondary btn-sm"><a href="#">Schedule For</a></button> -->
+                                   <a class="btn btn-secondary" href="#" role="button">Schedule For</a>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="activity_contact">
+                                        <label class="custom-control-label" for="activity_contact">Create separate activity for each contact</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+                        <form>
+                              <div class="form-row">
+                                  <div class="form-group col-12">
+                                      <label for="Attachmentfile">Attachment</label>
+                                      <input type="file" class="form-control" id="group" placeholder="contact">
+                                      <!-- <small id="contact" class="form-text text-danger">We'll never share your email with anyone
+                                          else.</small> -->
+                                  </div>
+                              </div>
+                              <div class="form-row pt-2">
+                                  <div class="form-group col-12 mb-0">
+                                      <div class="fo-editor">
+                                          <label class="">Details:</label>
+                                          <!-- Create the editor container -->
+                                          <div id="attch_editor" style="height: 200px;">
+                                              <p>Hello World!</p>
+                                              <p>Some initial <strong>bold</strong> text</p>
+                                              <p>
+                                                  <br>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="recurrence" role="tabpanel" aria-labelledby="recurrence-tab">...</div>
+                </div>
+               
+            </div>
+            <div class="modal-footer pb-4 pt-0">
+                <button type="button" class="btn fo-btn-primary">Save</button>
+                <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call Modal END-->
 <?php include('footer.php'); ?>

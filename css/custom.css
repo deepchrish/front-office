@@ -169,6 +169,14 @@ input[type="time"]:before {
 	right: 5px;
 	color: #fff;
 }
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: transparent;
+    border: 1px solid white;
+}
+.custom-control-label::before {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
 /* Bootstrap form control */
 /* select 2 START */
 .select2-container--default .select2-selection--multiple {

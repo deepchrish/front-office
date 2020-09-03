@@ -25,11 +25,39 @@
 <script src="assets/libs/select2/dist/js/select2.min.js"></script>
 <!-- Editor -->
 <script src="assets/libs/quill/dist/quill.min.js"></script>
+<!-- Color picker js-->
+<script src="assets/libs/jquery-minicolors/jquery.minicolors.min.js"></script>
 <script>
+	/*select2*/ 
     $(".select2").select2();
+
+    /*note editor*/
     var quill = new Quill('#editor', {
-            theme: 'snow'
+        theme: 'snow'
+    });
+
+    /*call editor*/
+    var quill = new Quill('#attch_editor', {
+        theme: 'snow'
+    });
+
+    /*colorpicker*/
+    $('.demo').each(function() {
+    $(this).minicolors({
+            control: $(this).attr('data-control') || 'hue',
+            position: $(this).attr('data-position') || 'bottom left',
+
+            change: function(value, opacity) {
+                if (!value) return;
+                if (opacity) value += ', ' + opacity;
+                if (typeof console === 'object') {
+                    console.log(value);
+                }
+            },
+            theme: 'bootstrap'
         });
+
+    });
 </script>
 </body>
 
