@@ -45,8 +45,7 @@
     $('.demo').each(function() {
     $(this).minicolors({
             control: $(this).attr('data-control') || 'hue',
-            position: $(this).attr('data-position') || 'bottom left',
-
+        
             change: function(value, opacity) {
                 if (!value) return;
                 if (opacity) value += ', ' + opacity;
@@ -58,6 +57,48 @@
         });
 
     });
+
+    //Recurrence tab section show and hide
+    $(document).ready(function(){
+    	$(".daily, .weekly, .monthly, .yearly").hide("fast");
+
+    	$("#once").click(function(){
+	   	 	$(".once").show("fast");
+	   	 	$(".daily").hide("fast");
+	   	 	$(".weekly").hide("fast");
+	   	 	$(".monthly").hide("fast");
+	   	 	$(".yearly").hide("fast");
+	  	});
+	  	$("#daily").click(function(){
+	   	 	$(".once").hide("fast");
+	   	 	$(".daily").show("fast");
+	   	 	$(".weekly").hide("fast");
+	   	 	$(".monthly").hide("fast");
+	   	 	$(".yearly").hide("fast");
+	  	});
+  		$("#weekly").click(function(){
+  	 	 	$(".once").hide("fast");
+  	 	 	$(".daily").hide("fast");
+  	 	 	$(".weekly").show("fast");
+  	 	 	$(".monthly").hide("fast");
+  	 	 	$(".yearly").hide("fast");
+  		});
+		$("#monthly").click(function(){
+	 	 	$(".once").hide("fast");
+	 	 	$(".daily").hide("fast");
+	 	 	$(".weekly").hide("fast");
+	 	 	$(".monthly").show("fast");
+	 	 	$(".yearly").hide("fast");
+		});
+		$("#yearly").click(function(){
+	 	 	$(".once").hide(1000);
+	 	 	$(".daily").hide(1000);
+	 	 	$(".weekly").hide(1000);
+	 	 	$(".monthly").hide(1000);
+	 	 	$(".yearly").show(1000);
+		});
+	});
+
 </script>
 </body>
 

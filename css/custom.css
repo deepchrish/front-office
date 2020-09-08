@@ -169,14 +169,68 @@ input[type="time"]:before {
 	right: 5px;
 	color: #fff;
 }
+/* input fields yellow color start*/
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
 }
 .custom-control-label::before {
     background-color: transparent;
     border: 1px solid #ffffff;
 }
+input.form-control::placeholder{
+	color: #898945 !important;
+}
+.form-control,
+.form-control:focus,
+input,
+select option {
+    color: #ffff00;
+}
+.customcheckbox .checkmark:after {
+    border: solid #ffff00 !important;
+    border-width: 0 1.5px 1.5px 0 !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    content: "L";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 15px;
+    top: 6px;
+    -ms-transform: scaleX(-1) rotate(-48deg);
+    -webkit-transform: scaleX(-1) rotate(-48deg);
+    transform: scaleX(-1) rotate(-48deg);
+    color: #ffff00;
+    background-image: none;
+}
+.btn-secondary {
+    color: #fffff;
+    background-color: #ff8549;
+    border-color: #ff8549;
+}
+.show>.btn-secondary.dropdown-toggle,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:hover {
+    color: #ffffff;
+    background-color: #c34000;
+    border-color: #c34000;
+}
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #ff854900;
+}
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(108 117 125 / 0%);
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+	color: #ffff00;
+}
+.fo-editor p {
+    color: #ffff00;
+}
+/* input fields yellow color end*/
+
 /* Bootstrap form control */
 /* select 2 START */
 .select2-container--default .select2-selection--multiple {
@@ -542,7 +596,13 @@ input[type="time"]:before {
 	font-size: 14px;
 	margin-bottom: 0;
 }
-
+/*call tab*/
+.content-display {
+    border: 1px solid #ffffff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+}
 /* card */
 
 

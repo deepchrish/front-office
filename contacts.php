@@ -813,25 +813,7 @@
                                 <div class="form-group col">
                                     <div class="form-group">
                                         <label for="hue-demo">Color</label>
-                                        <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left">
-                                            <input type="text" id="hue-demo" class="form-control demo minicolors-input" data-control="hue" value="#ff6161" size="7">
-                                            <span class="minicolors-swatch minicolors-sprite minicolors-input-swatch">
-                                                <span class="minicolors-swatch-color" style="background-color: rgb(204, 57, 57); opacity: 1;">
-                                                </span>
-                                            </span>
-                                            <div class="minicolors-panel minicolors-slider-hue" style="display: none;">
-                                                <div class="minicolors-slider minicolors-sprite">
-                                                    <div class="minicolors-picker" style="top: 150px;"></div>
-                                                </div>
-                                                <div class="minicolors-opacity-slider minicolors-sprite">
-                                                    <div class="minicolors-picker"></div>
-                                                </div>
-                                                <div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);">
-                                                    <div class="minicolors-grid-inner"></div>
-                                                    <div class="minicolors-picker" style="top: 29px; left: 108px;"><div>    
-                                                </div>
-                                            </div>
-                                        </div></div></div> 
+                                        <input type="text" id="hue-demo" class="form-control demo" data-control="hue" value="#ff6161">
                                     </div>                              
                                 </div>
                             </div>
@@ -874,37 +856,251 @@
                     </div>
                     <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
                         <form>
-                              <div class="form-row">
-                                  <div class="form-group col-12">
-                                      <label for="Attachmentfile">Attachment</label>
-                                      <input type="file" class="form-control" id="group" placeholder="contact">
-                                      <!-- <small id="contact" class="form-text text-danger">We'll never share your email with anyone
+                            <div class="form-row pt-2">
+                                <div class="form-group col-12">
+                                    <label for="Attachmentfile">Attachment</label>
+                                    <input type="file" class="form-control" id="group" placeholder="contact">
+                                    <!-- <small id="contact" class="form-text text-danger">We'll never share your email with anyone
                                           else.</small> -->
-                                  </div>
-                              </div>
-                              <div class="form-row pt-2">
-                                  <div class="form-group col-12 mb-0">
-                                      <div class="fo-editor">
-                                          <label class="">Details:</label>
-                                          <!-- Create the editor container -->
-                                          <div id="attch_editor" style="height: 200px;">
-                                              <p>Hello World!</p>
-                                              <p>Some initial <strong>bold</strong> text</p>
-                                              <p>
-                                                  <br>
-                                              </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-
+                                </div>
+                            </div>
+                            <div class="form-row pt-2">
+                                <div class="form-group col-12 pb-4 mb-0">
+                                    <div class="fo-editor">
+                                        <label class="">Details:</label>
+                                        <!-- Create the editor container -->
+                                        <div id="attch_editor" style="height: 200px;">
+                                            <p>Hello World!</p>
+                                            <p>Some initial <strong>bold</strong> text</p>
+                                            <p>
+                                            <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
-                    <div class="tab-pane fade" id="recurrence" role="tabpanel" aria-labelledby="recurrence-tab">...</div>
-                </div>
-               
+                    <div class="tab-pane fade" id="recurrence" role="tabpanel" aria-labelledby="recurrence-tab">
+                        <form>
+                            <h6 class="pt-2 pb-2">Occurs:</h6>
+                            <div class="form-row">
+                                <div class="form-group col-12 d-flex flex-wrap justify-content-center justify-content-sm-between">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="once" name="occurs" class="custom-control-input" checked="checked">
+                                        <label class="custom-control-label" for="once">Once</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="daily" name="occurs" class="custom-control-input">
+                                        <label class="custom-control-label" for="daily">Daily</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="weekly" name="occurs" class="custom-control-input">
+                                        <label class="custom-control-label" for="weekly">Weekly</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="monthly" name="occurs" class="custom-control-input">
+                                        <label class="custom-control-label" for="monthly">Monthly</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="yearly" name="occurs" class="custom-control-input">
+                                        <label class="custom-control-label" for="yearly">Yearly</label>
+                                    </div>  
+                                </div>
+
+                                <div class="content-display">
+                                    <div class="col-12">
+                                        <div class="once">
+                                            <p>This activity occurs only once.</p>
+                                        </div>
+
+                                        <div class="daily">
+                                            <div class="form-row pb-2">
+                                                <div class="form-group col-2">
+                                                   <div class="custom-control custom-radio">
+                                                       <input type="radio" id="every" name="every" class="custom-control-input">
+                                                       <label class="custom-control-label" for="every">Every</label>
+                                                   </div>
+                                                </div>
+                                                <div class="form-group col-2">
+                                                    <select class="form-control" id="days"
+                                                        style="height: 36px;width: 100%;">
+                                                       <option value="1">1</option>
+                                                       <option value="2">2</option>
+                                                       <option value="3">3</option>
+                                                       <option value="4">4</option>
+                                                       <option value="5">5</option>
+                                                       <option value="6">6</option>
+                                                       <option value="7">7</option>
+                                                       <option value="8">8</option>
+                                                       <option value="9">9</option>
+                                                       <option value="10">10</option>
+                                                       <option value="11">11</option>
+                                                       <option value="12">12</option>
+                                                       <option value="13">13</option>
+                                                       <option value="14">14</option>
+                                                       <option value="15">15</option>
+                                                       <option value="16">16</option>
+                                                       <option value="17">17</option>
+                                                       <option value="18">18</option>
+                                                       <option value="19">19</option>
+                                                       <option value="20">20</option>
+                                                       <option value="21">21</option>
+                                                       <option value="22">22</option>
+                                                       <option value="23">23</option>
+                                                       <option value="24">24</option>
+                                                       <option value="25">25</option>
+                                                       <option value="26">26</option>
+                                                       <option value="27">27</option>
+                                                       <option value="28">28</option>
+                                                       <option value="29">29</option>
+                                                       <option value="30">30</option>
+                                                       <option value="31">31</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-2">
+                                                    <p>days</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-12">
+                                                   <div class="custom-control custom-radio">
+                                                       <input type="radio" id="every_weekday" name="every_weekday" class="custom-control-input">
+                                                       <label class="custom-control-label" for="every_weekday">Every Weekday</label>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="weekly">
+                                            <div class="form-row pb-2">
+                                                <div class="form-group col-2">
+                                                    <label for="every_weeks">Every</label>
+                                                </div>
+                                                <div class="form-group col-2">
+                                                    <select class="form-control" id="every_weekson"
+                                                        style="height: 36px;width: 100%;">
+                                                       <option value="1">1</option>
+                                                       <option value="2">2</option>
+                                                       <option value="3">3</option>
+                                                       <option value="4">4</option>
+                                                       <option value="5">5</option>
+                                                       <option value="6">6</option>
+                                                       <option value="7">7</option>
+                                                       <option value="8">8</option>
+                                                       <option value="9">9</option>
+                                                       <option value="10">10</option>
+                                                       <option value="11">11</option>
+                                                       <option value="12">12</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-3">
+                                                    <p>weeks on</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="monday">
+                                                        <label class="custom-control-label" for="monday">Monday</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="tuesday">
+                                                        <label class="custom-control-label" for="tuesday">Tuesday</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="wednesday">
+                                                        <label class="custom-control-label" for="wednesday">Wednesday</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="thursday">
+                                                        <label class="custom-control-label" for="thursday">Thursday</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="friday">
+                                                        <label class="custom-control-label" for="friday">Friday</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="saturday">
+                                                        <label class="custom-control-label" for="saturday">Saturday</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="sunday">
+                                                        <label class="custom-control-label" for="sunday">Sunday</label>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <div class="monthly">
+                                            <p>Monthly content</p>
+                                        </div>
+                                        <div class="yearly">
+                                            <p>Yearly content</p>
+                                        </div>
+                                    </div>
+
+                                   
+
+                                </div>
+                            </div>
+
+                            <h6 class="pt-4 pb-2">Range:</h6>
+                            <div class="content-display">
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="starts">Starts</label>
+                                        <input type="date" class="form-control" id="starts" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="noend_date" name="noend_date" class="custom-control-input">
+                                            <label class="custom-control-label" for="noend_date">No end date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row pb-2">
+                                    <div class="form-group col-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="ends" name="ends" class="custom-control-input">
+                                            <label class="custom-control-label" for="ends">Ends</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <input type="date" class="form-control" id="end_Date" placeholder="Date">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
             </div>
-            <div class="modal-footer pb-4 pt-0">
+            <div class="modal-footer pb-4 pt-0 pt-4">
                 <button type="button" class="btn fo-btn-primary">Save</button>
                 <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
