@@ -631,6 +631,11 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
+            <div class="message-show">
+                <p class="daily-row">Occurs every 5 days.</p>
+                <p class="daily-row">Occurs every 5 days.</p>
+            </div>
             <div class="modal-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item">
@@ -852,6 +857,11 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal-footer pb-4 pt-0 pt-4">
+                                <button type="button" class="btn fo-btn-primary">Save</button>
+                                <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
@@ -878,6 +888,11 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="modal-footer pb-4 pt-0 pt-4">
+                                <button type="button" class="btn fo-btn-primary">Save</button>
+                                <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
                             </div>
                         </form>
                     </div>
@@ -918,7 +933,7 @@
                                             <div class="form-row pb-2">
                                                 <div class="form-group col-2">
                                                    <div class="custom-control custom-radio">
-                                                       <input type="radio" id="every" name="every" class="custom-control-input">
+                                                       <input type="radio" id="every" name="dailyRBGroup" class="custom-control-input">
                                                        <label class="custom-control-label" for="every">Every</label>
                                                    </div>
                                                 </div>
@@ -967,7 +982,7 @@
                                             <div class="form-row">
                                                 <div class="form-group col-12">
                                                    <div class="custom-control custom-radio">
-                                                       <input type="radio" id="every_weekday" name="every_weekday" class="custom-control-input">
+                                                       <input type="radio" id="every_weekday" name="dailyRBGroup" class="custom-control-input">
                                                        <label class="custom-control-label" for="every_weekday">Every Weekday</label>
                                                    </div>
                                                 </div>
@@ -1057,10 +1072,260 @@
                                         </div>
 
                                         <div class="monthly">
-                                            <p>Monthly content</p>
+                                            <div class="form-row pb-2">
+                                               <div class="form-group col-2">
+                                                   <label for="every_monthson">Every</label>
+                                               </div>
+                                               <div class="form-group col-2">
+                                                   <select class="form-control" id="every_monthson"
+                                                       style="height: 36px;width: 100%;">
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="3">3</option>
+                                                      <option value="4">4</option>
+                                                      <option value="5">5</option>
+                                                      <option value="6">6</option>
+                                                      <option value="7">7</option>
+                                                      <option value="8">8</option>
+                                                      <option value="9">9</option>
+                                                      <option value="10">10</option>
+                                                      <option value="11">11</option>
+                                                      <option value="12">12</option>
+                                                   </select>
+                                               </div>
+                                               <div class="form-group col-3">
+                                                   <p>months on</p>
+                                               </div>
+                                           </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="ddNumberedDays" name="monthly_days" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ddNumberedDays">The</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-3">
+                                                    <select class="form-control" id="ddNumberedDays_num"
+                                                        style="height: 36px;width: 100%;">
+                                                       <option value="1">1st</option>
+                                                       <option value="2">2nd</option>
+                                                       <option value="3">3rd</option>
+                                                       <option value="4">4th</option>
+                                                       <option value="5">5th</option>
+                                                       <option value="6">6th</option>
+                                                       <option value="7">7th</option>
+                                                       <option value="8">8th</option>
+                                                       <option value="9">9th</option>
+                                                       <option value="10">10th</option>
+                                                       <option value="11">11th</option>
+                                                       <option value="12">12th</option>
+                                                       <option value="13">13th</option>
+                                                       <option value="14">14th</option>
+                                                       <option value="15">15th</option>
+                                                       <option value="16">16th</option>
+                                                       <option value="17">17th</option>
+                                                       <option value="18">18th</option>
+                                                       <option value="19">19th</option>
+                                                       <option value="20">20th</option>
+                                                       <option value="21">21st</option>
+                                                       <option value="22">22nd</option>
+                                                       <option value="23">23rd</option>
+                                                       <option value="24">24th</option>
+                                                       <option value="25">25th</option>
+                                                       <option value="26">26th</option>
+                                                       <option value="27">27th</option>
+                                                       <option value="28">28th</option>
+                                                       <option value="29">29th</option>
+                                                       <option value="30">30th</option>
+                                                       <option value="31">31st</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                
+                                            <div class="form-row">
+                                                <div class="form-group col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="ddModifierday" name="monthly_days" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ddModifierday">The</label>
+                                                    </div>  
+                                                </div>
+                                                <div class="form-group col-3">
+                                                    <select class="form-control" id="ddModifierday_value"
+                                                        style="height: 36px;width: 100%;">
+                                                       <option value="first">First</option>
+                                                       <option value="second">Second</option>
+                                                       <option value="third">Third</option>
+                                                       <option value="fourth">Fourth</option>
+                                                       <option value="last">Last</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-3">
+                                                    <select class="form-control" id="ddTypedDays"
+                                                        style="height: 36px;width: 100%;">
+                                                       <option value="monday">Monday</option>
+                                                       <option value="tuesday">Tuesday</option>
+                                                       <option value="wednesday">Wednesday</option>
+                                                       <option value="thursday">Thursday</option>
+                                                       <option value="friday">Friday</option>
+                                                       <option value="saturday">Saturday</option>
+                                                       <option value="sunday">Sunday</option>
+                                                       <option value="day">Day</option>
+                                                       <option value="weekday">Weekday</option>
+                                                       <option value="weekend_day">Weekend Day</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="yearly">
-                                            <p>Yearly content</p>
+                                            <div class="form-row pb-2">
+                                               <div class="form-group col-2">
+                                                   <label for="every_year">Every</label>
+                                               </div>
+                                               <div class="form-group col-2">
+                                                   <select class="form-control" id="every_year"
+                                                       style="height: 36px;width: 100%;">
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="3">3</option>
+                                                      <option value="4">4</option>
+                                                      <option value="5">5</option>
+                                                      <option value="6">6</option>
+                                                      <option value="7">7</option>
+                                                      <option value="8">8</option>
+                                                      <option value="9">9</option>
+                                                      <option value="10">10</option>
+                                                   </select>
+                                               </div>
+                                               <div class="form-group col-3">
+                                                   <p>years</p>
+                                               </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-3">
+                                                   <div class="custom-control custom-radio">
+                                                       <input type="radio" id="ddYearModifier" name="yearlyRBGroup" class="custom-control-input">
+                                                       <label class="custom-control-label" for="ddYearModifier">on</label>
+                                                   </div>  
+                                                </div>
+                                                <div class="form-group col-3">
+                                                   <select class="form-control" id="months"
+                                                       style="height: 36px;width: 100%;">
+                                                      <option value="january">January</option>
+                                                      <option value="february">February</option>
+                                                      <option value="march">March</option>
+                                                      <option value="april">April</option>
+                                                      <option value="may">May</option>
+                                                      <option value="june">June</option>
+                                                      <option value="july">July</option>
+                                                      <option value="august">August</option>
+                                                      <option value="september">September</option>
+                                                      <option value="october">October</option>
+                                                      <option value="november">November</option>
+                                                      <option value="december">December</option>
+                                                   </select>
+                                                </div>
+                                                <div class="form-group col-3">
+                                                    <select class="form-control" id="ddnumbereddaysmonthly"
+                                                        style="height: 36px;width: 100%;">
+                                                        <option value="1">1st</option>
+                                                        <option value="2">2nd</option>
+                                                        <option value="3">3rd</option>
+                                                        <option value="4">4th</option>
+                                                        <option value="5">5th</option>
+                                                        <option value="6">6th</option>
+                                                        <option value="7">7th</option>
+                                                        <option value="8">8th</option>
+                                                        <option value="9">9th</option>
+                                                        <option value="10">10th</option>
+                                                        <option value="11">11th</option>
+                                                        <option value="12">12th</option>
+                                                        <option value="13">13th</option>
+                                                        <option value="14">14th</option>
+                                                        <option value="15">15th</option>
+                                                        <option value="16">16th</option>
+                                                        <option value="17">17th</option>
+                                                        <option value="18">18th</option>
+                                                        <option value="19">19th</option>
+                                                        <option value="20">20th</option>
+                                                        <option value="21">21st</option>
+                                                        <option value="22">22nd</option>
+                                                        <option value="23">23rd</option>
+                                                        <option value="24">24th</option>
+                                                        <option value="25">25th</option>
+                                                        <option value="26">26th</option>
+                                                        <option value="27">27th</option>
+                                                        <option value="28">28th</option>
+                                                        <option value="29">29th</option>
+                                                        <option value="30">30th</option>
+                                                        <option value="31">31st</option>
+                                                    </select>
+                                               </div>
+                                           </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-3">
+                                                    <div class="custom-control custom-radio">
+                                                       <input type="radio" id="ddYearModifierSecond" name="yearlyRBGroup" class="custom-control-input">
+                                                       <label class="custom-control-label" for="ddYearModifierSecond">on the</label>
+                                                    </div>  
+                                                </div>
+                                                <div class="form-group col-9">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-4">
+                                                            <select class="form-control" id="yearNum"
+                                                                style="height: 36px;width: 100%;">
+                                                               <option value="first">First</option>
+                                                               <option value="second">Second</option>
+                                                               <option value="third">Third</option>
+                                                               <option value="fourth">Fourth</option>
+                                                               <option value="last">Last</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group col-5">
+                                                            <select class="form-control" id="ddTypedYearlyDays"
+                                                                style="height: 36px;width: 100%;">
+                                                               <option value="monday">Monday</option>
+                                                               <option value="tuesday">Tuesday</option>
+                                                               <option value="wednesday">Wednesday</option>
+                                                               <option value="thursday">Thursday</option>
+                                                               <option value="friday">Friday</option>
+                                                               <option value="saturday">Saturday</option>
+                                                               <option value="sunday">Sunday</option>
+                                                               <option value="day">Day</option>
+                                                               <option value="weekday">Weekday</option>
+                                                               <option value="weekend_day">Weekend Day</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="form-group col-2">
+                                                            <span>of</span>
+                                                        </div>
+                                                    </di1v>
+
+                                                    <div class="form-row">
+                                                         <div class="form-group col-12">
+                                                             <select class="form-control" id="yearlymonths"
+                                                                 style="height: 36px;width: 100%;">
+                                                                 <option value="january">January</option>
+                                                                 <option value="february">February</option>
+                                                                 <option value="march">March</option>
+                                                                 <option value="april">April</option>
+                                                                 <option value="may">May</option>
+                                                                 <option value="june">June</option>
+                                                                 <option value="july">July</option>
+                                                                 <option value="august">August</option>
+                                                                 <option value="september">September</option>
+                                                                 <option value="october">October</option>
+                                                                 <option value="november">November</option>
+                                                                 <option value="december">December</option>
+                                                             </select>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
                                         </div>
                                     </div>
 
@@ -1080,7 +1345,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-12">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="noend_date" name="noend_date" class="custom-control-input">
+                                            <input type="radio" id="noend_date" name="recurEndGroup" class="custom-control-input">
                                             <label class="custom-control-label" for="noend_date">No end date</label>
                                         </div>
                                     </div>
@@ -1088,7 +1353,7 @@
                                 <div class="form-row pb-2">
                                     <div class="form-group col-2">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="ends" name="ends" class="custom-control-input">
+                                            <input type="radio" id="ends" name="recurEndGroup" class="custom-control-input">
                                             <label class="custom-control-label" for="ends">Ends</label>
                                         </div>
                                     </div>
@@ -1097,12 +1362,15 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="form-row recurrence-footer"> 
+                                <div class="modal-footer pb-4 pt-0 pt-4">
+                                    <button type="button" class="btn fo-btn-primary">Save</button>
+                                    <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
                         </form>
                     </div> 
-            </div>
-            <div class="modal-footer pb-4 pt-0 pt-4">
-                <button type="button" class="btn fo-btn-primary">Save</button>
-                <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>

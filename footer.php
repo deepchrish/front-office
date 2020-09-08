@@ -99,6 +99,47 @@
 		});
 	});
 
+  //Monthly recurrence radio button active or not
+  $("#ddNumberedDays").click(function(){
+    $("#ddModifierday_value").attr("disabled", "disabled");
+    $('#ddTypedDays').attr('disabled', 'disabled');
+  });
+  $("#ddModifierday").click(function(){
+    $('#ddModifierday_value').removeAttr('disabled');
+    $('#ddTypedDays').removeAttr('disabled');
+    $('#ddNumberedDays_num').attr('disabled', 'disabled');
+  });
+
+  //Yearly recurrence radio button active or not
+  $("#ddYearModifier").click(function(){
+    $("#yearNum").attr("disabled", "disabled");
+    $('#ddTypedYearlyDays').attr('disabled', 'disabled');
+    $('#yearlymonths').attr('disabled', 'disabled');
+    $('#months').removeAttr('disabled');
+    $('#ddnumbereddaysmonthly').removeAttr('disabled');
+  });
+
+  $("#ddYearModifierSecond").click(function(){
+    $("#months").attr("disabled", "disabled");
+    $('#ddnumbereddaysmonthly').attr('disabled', 'disabled');
+    $("#yearNum").removeAttr('disabled');
+    $('#ddTypedYearlyDays').removeAttr('disabled');
+    $('#yearlymonths').removeAttr('disabled');
+  });
+  
+
+  //Range recurrence radio button active or not
+  $("#noend_date").click(function(){
+    $("#end_Date").attr("disabled", "disabled");
+  });
+  $("#ends").click(function(){
+    $('#end_Date').removeAttr('disabled');
+    // $("#end_Date").attr("disabled", "disabled");
+  });
+
+
+  
+
 </script>
 </body>
 

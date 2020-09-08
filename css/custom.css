@@ -229,6 +229,14 @@ select option {
 .fo-editor p {
     color: #ffff00;
 }
+.recurrence-footer,
+.recurrence-footer .modal-footer {
+    width: 100% !important;
+}
+.form-control:disabled {
+    background-color: #a6a6a6;
+    color: #2f2f2f;
+}
 /* input fields yellow color end*/
 
 /* Bootstrap form control */
