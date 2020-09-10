@@ -551,7 +551,7 @@
 <!-- Delete Action Modal END-->
 <!-- Notes Modal START-->
 <div class="modal fade" id="addnote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
@@ -623,7 +623,7 @@
 
 <!-- Call Modal START-->
 <div class="modal fade" id="addcall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Add Call</h5>
@@ -633,8 +633,9 @@
             </div>
 
             <div class="message-show">
-                <p class="daily-row">Occurs every 5 days.</p>
-                <p class="daily-row">Occurs every 5 days.</p>
+               <!--  <p class="daily-everyday">Occurs every <span id="day_Val"> </span> <span class="day_hide">day</span>.</p>
+                <p class="daily-weekday">Occurs every weekday.</p> -->
+                <!-- <p class="weekly-everyday">Occurs every<span id="monVal"></span></p> -->
             </div>
             <div class="modal-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -716,7 +717,7 @@
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group col-9">
+                                <div class="form-group col-10">
                                     <label for="schedule">Schedule With</label>
                                     <select class="select2 form-control" multiple="multiple" id="schedule"
                                         style="height: 36px;width: 100%;">
@@ -725,9 +726,9 @@
                                         <option value="THREE">Test Three</option>
                                     </select>
                                 </div>
-                                <div class="align-items-end col-3 d-flex form-group">
-                                    <div class="dropdown">
-                                      <button class="btn btn-secondary dropdown-toggle" type="button" id="contacts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="align-items-end col-2 d-flex form-group w-100">
+                                    <div class="dropdown w-100">
+                                      <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="contacts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Contacts
                                       </button>
                                       <div class="dropdown-menu" aria-labelledby="contacts">
@@ -756,7 +757,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-2 align-items-end d-flex">
-                                    <a class="btn btn-secondary" href="#" role="button">......</a>
+                                    <a class="btn btn-secondary w-100" href="#" role="button">......</a>
                                     <!-- <button type="button" class="btn btn-secondary btn-sm"><a href="#">......</a></button> -->
                                 </div>
                             </div>
@@ -824,7 +825,7 @@
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group col-8">
+                                <div class="form-group col-10">
                                     <label for="ring_alarm">Ring Alarm</label>
                                     <select class="form-control" id="ring_alarm"
                                       style="height: 36px;width: 100%;">
@@ -843,9 +844,10 @@
                                         <option value="30">30 Days</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-4 align-items-end d-flex">
+                                <div class="form-group col-2 align-items-end d-flex">
                                    <!-- <button type="button" class="btn btn-secondary btn-sm"><a href="#">Schedule For</a></button> -->
-                                   <a class="btn btn-secondary" href="#" role="button">Schedule For</a>
+                                   <a class="btn btn-secondary w-100" href="#" data-toggle="modal" data-target="#schedulefor" role="button">Schedule For</a>
+
                                 </div>
                             </div>
 
@@ -933,7 +935,7 @@
                                             <div class="form-row pb-2">
                                                 <div class="form-group col-2">
                                                    <div class="custom-control custom-radio">
-                                                       <input type="radio" id="every" name="dailyRBGroup" class="custom-control-input">
+                                                       <input type="radio" id="every" name="dailyRBGroup" class="custom-control-input" checked="checked">
                                                        <label class="custom-control-label" for="every">Every</label>
                                                    </div>
                                                 </div>
@@ -1019,21 +1021,21 @@
                                             <div class="form-row">
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="monday">
+                                                        <input type="checkbox" class="custom-control-input" id="monday" value="Monday">
                                                         <label class="custom-control-label" for="monday">Monday</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="tuesday">
+                                                        <input type="checkbox" class="custom-control-input" id="tuesday" value="Tuesday" >
                                                         <label class="custom-control-label" for="tuesday">Tuesday</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="wednesday">
+                                                        <input type="checkbox" class="custom-control-input" id="wednesday" value="Wednesday">
                                                         <label class="custom-control-label" for="wednesday">Wednesday</label>
                                                     </div>
                                                 </div>
@@ -1042,20 +1044,20 @@
                                             <div class="form-row">
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="thursday">
+                                                        <input type="checkbox" class="custom-control-input" id="thursday" value="Thursday">
                                                         <label class="custom-control-label" for="thursday">Thursday</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="friday">
+                                                        <input type="checkbox" class="custom-control-input" id="friday" value="Friday">
                                                         <label class="custom-control-label" for="friday">Friday</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="saturday">
+                                                        <input type="checkbox" class="custom-control-input" id="saturday" value="Saturday">
                                                         <label class="custom-control-label" for="saturday">Saturday</label>
                                                     </div>
                                                 </div>
@@ -1064,7 +1066,7 @@
                                             <div class="form-row">
                                                 <div class="form-group col-4">
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="sunday">
+                                                        <input type="checkbox" class="custom-control-input" id="sunday" value="Sunday">
                                                         <label class="custom-control-label" for="sunday">Sunday</label>
                                                     </div>
                                                 </div> 
@@ -1328,9 +1330,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                   
-
                                 </div>
                             </div>
 
@@ -1373,6 +1372,42 @@
                     </div> 
             </div>
         </div>
+    </div>
+</div>
+
+<div class="modal fade" id="schedulefor" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Schedule For</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+
+            <div class="modal-body">
+                <h6 class="pt-2 pb-2">Schedule For:</h6>
+                <div class="content-display">
+                    <p>You have been granted calendar access that allows you to
+                    schedule activities on behalf of other users.</p>
+                    <form>
+                       <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="schedule_email">Schedule this activity for:</label>
+                            <select class="form-control" id="schedule_email"
+                              style="height: 36px;width: 100%;">
+                                <option value="user@gmail.com">user@gmail.com</option>
+                            </select>
+                        </div>
+                       </div> 
+                    </form>
+                </div>
+                <div class="modal-footer pb-4 pt-0 pt-4">
+                    <button type="button" class="btn fo-btn-primary">Save</button>
+                    <button type="button" class="btn fo-btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+       </div>
     </div>
 </div>
 <!-- Call Modal END-->

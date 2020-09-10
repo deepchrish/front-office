@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="assets/libs/quill/dist/quill.snow.css">
     <!-- Color picker CSS-->
     <link rel="stylesheet" type="text/css" href="assets/libs/jquery-minicolors/jquery.minicolors.css">
+
+    <!-- Date picker CSS-->
+   <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <!-- Custom CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">

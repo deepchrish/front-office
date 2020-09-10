@@ -237,6 +237,9 @@ select option {
     background-color: #a6a6a6;
     color: #2f2f2f;
 }
+.picker-switch{
+	display: none !important;
+}
 /* input fields yellow color end*/
 
 /* Bootstrap form control */
@@ -302,7 +305,6 @@ select option {
 	background: #344153;
 	border-radius: 3px;
 }
-
 /* quil editor END*/
 
 /* Modal */
@@ -604,14 +606,21 @@ select option {
 	font-size: 14px;
 	margin-bottom: 0;
 }
-/*call tab*/
+/*add call popup css start*/
 .content-display {
     border: 1px solid #ffffff;
     width: 100%;
     padding: 10px;
     border-radius: 7px;
 }
-/* card */
+.nav-tabs .nav-link {
+    color: #ffffff;
+}
+.nav-tabs .nav-link.active {
+    background-color: #ff8549;
+    border-color: #ff8549;
+    color: #ffffff;
+}
 
 
 /* Responsive */

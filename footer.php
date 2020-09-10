@@ -27,6 +27,8 @@
 <script src="assets/libs/quill/dist/quill.min.js"></script>
 <!-- Color picker js-->
 <script src="assets/libs/jquery-minicolors/jquery.minicolors.min.js"></script>
+<!-- Date picker js-->
+<script src="assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script>
 	/*select2*/ 
     $(".select2").select2();
@@ -64,10 +66,8 @@
 
     	$("#once").click(function(){
 	   	 	$(".once").show("fast");
-	   	 	$(".daily").hide("fast");
-	   	 	$(".weekly").hide("fast");
-	   	 	$(".monthly").hide("fast");
-	   	 	$(".yearly").hide("fast");
+	   	 	$(".daily, .weekly, .monthly, .yearly, .daily-everyday, .daily-weekday").hide("fast");
+       
 	  	});
 	  	$("#daily").click(function(){
 	   	 	$(".once").hide("fast");
@@ -75,6 +75,7 @@
 	   	 	$(".weekly").hide("fast");
 	   	 	$(".monthly").hide("fast");
 	   	 	$(".yearly").hide("fast");
+        $('.daily-everyday').show("fast");
 	  	});
   		$("#weekly").click(function(){
   	 	 	$(".once").hide("fast");
@@ -91,11 +92,11 @@
 	 	 	$(".yearly").hide("fast");
 		});
 		$("#yearly").click(function(){
-	 	 	$(".once").hide(1000);
-	 	 	$(".daily").hide(1000);
-	 	 	$(".weekly").hide(1000);
-	 	 	$(".monthly").hide(1000);
-	 	 	$(".yearly").show(1000);
+	 	 	$(".once").hide("fast");
+	 	 	$(".daily").hide("fast");
+	 	 	$(".weekly").hide("fast");
+	 	 	$(".monthly").hide("fast");
+	 	 	$(".yearly").show("fast");
 		});
 	});
 
@@ -134,12 +135,22 @@
   });
   $("#ends").click(function(){
     $('#end_Date').removeAttr('disabled');
-    // $("#end_Date").attr("disabled", "disabled");
   });
 
-
-  
-
+  /*datwpicker*/
+  jQuery('.mydatepicker').datepicker({
+      format: 'dd-mm',
+      maxViewMode:"date",
+      maxViewMode:"months"
+    });
+  // jQuery('#datepicker-autoclose').datepicker({
+  //     autoclose: true,
+  //     todayHighlight: true,
+  //     // maxViewMode:"months",
+  //     // // minViewMode:"years",
+  //     // format: "MM dd"
+  //     // minViewMode: "years"
+  // });
 </script>
 </body>
 

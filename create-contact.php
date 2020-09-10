@@ -79,6 +79,18 @@
             </div>
             <!-- Email -->
 
+            <!-- DOB -->
+            <div class="form-group col-md-3 py-2">
+                <label for="dob">DOB</label>
+                <div class="input-group">
+                    <input type="text" class="form-control mydatepicker" placeholder="MM dd">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>              
+            <!-- DOB -->
+
             <!-- Address -->
             <div class="form-group col-md-12 py-2">
                 <label for="inputPassword4">Address</label>
@@ -86,14 +98,14 @@
             </div>
             <!-- Address -->
 
-            <!-- City -->
+            <!-- Country -->
             <div class="form-group col-md-3 py-2">
-                <label for="inputPassword4">City</label>
+                <label for="inputPassword4">Country</label>
                 <select class="form-control" placeholder="Select">
                     <option>Select</option>
                 </select>
             </div>
-            <!-- City -->
+            <!-- Country -->
 
             <!-- State -->
             <div class="form-group col-md-3 py-2">
@@ -104,6 +116,13 @@
             </div>
             <!-- State -->
 
+            <!-- City -->
+            <div class="form-group col-md-3 py-2">
+                <label for="city">City</label>
+                <input type="city" class="form-control" id="city" placeholder="City">
+            </div>
+            <!-- City -->
+
             <!-- ZIP -->
             <div class="form-group col-md-3 py-2">
                 <label for="inputPassword4">ZIP</label>
@@ -111,14 +130,7 @@
             </div>
             <!-- ZIP -->
             
-            <!-- Country -->
-            <div class="form-group col-md-3 py-2">
-                <label for="inputPassword4">Country</label>
-                <select class="form-control" placeholder="Select">
-                    <option>Select</option>
-                </select>
-            </div>
-            <!-- Country -->
+            
         </div>
         <!-- Save Button -->
         <button type="submit" class="btn fo-btn-primary">Save</button>
