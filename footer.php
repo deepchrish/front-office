@@ -30,89 +30,101 @@
 <!-- Date picker js-->
 <script src="assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script>
-	/*select2*/ 
-    $(".select2").select2();
+  /*select2*/
+  $(".select2").select2();
 
-    /*note editor*/
-    var quill = new Quill('#editor', {
-        theme: 'snow'
-    });
+  /*note editor*/
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
 
-    /*call editor*/
-    var quill = new Quill('#attch_editor', {
-        theme: 'snow'
-    });
+  /*call editor*/
+  var quill = new Quill('#attch_editor', {
+    theme: 'snow'
+  });
+/*History editor*/
+  var quill = new Quill('#history-editor', {
+    theme: 'snow'
+  });
 
-    /*colorpicker*/
-    $('.demo').each(function() {
+  /*colorpicker*/
+  $('.demo').each(function () {
     $(this).minicolors({
-            control: $(this).attr('data-control') || 'hue',
-        
-            change: function(value, opacity) {
-                if (!value) return;
-                if (opacity) value += ', ' + opacity;
-                if (typeof console === 'object') {
-                    console.log(value);
-                }
-            },
-            theme: 'bootstrap'
-        });
+      control: $(this).attr('data-control') || 'hue',
 
+      change: function (value, opacity) {
+        if (!value) return;
+        if (opacity) value += ', ' + opacity;
+        if (typeof console === 'object') {
+          console.log(value);
+        }
+      },
+      theme: 'bootstrap'
     });
 
-    //Recurrence tab section show and hide
-    $(document).ready(function(){
-    	$(".daily, .weekly, .monthly, .yearly").hide("fast");
+  });
 
-    	$("#once").click(function(){
-	   	 	$(".once").show("fast");
-	   	 	$(".daily, .weekly, .monthly, .yearly, .daily-everyday, .daily-weekday").hide("fast");
-       
-	  	});
-	  	$("#daily").click(function(){
-	   	 	$(".once").hide("fast");
-	   	 	$(".daily").show("fast");
-	   	 	$(".weekly").hide("fast");
-	   	 	$(".monthly").hide("fast");
-	   	 	$(".yearly").hide("fast");
-        $('.daily-everyday').show("fast");
-	  	});
-  		$("#weekly").click(function(){
-  	 	 	$(".once").hide("fast");
-  	 	 	$(".daily").hide("fast");
-  	 	 	$(".weekly").show("fast");
-  	 	 	$(".monthly").hide("fast");
-  	 	 	$(".yearly").hide("fast");
-  		});
-		$("#monthly").click(function(){
-	 	 	$(".once").hide("fast");
-	 	 	$(".daily").hide("fast");
-	 	 	$(".weekly").hide("fast");
-	 	 	$(".monthly").show("fast");
-	 	 	$(".yearly").hide("fast");
-		});
-		$("#yearly").click(function(){
-	 	 	$(".once").hide("fast");
-	 	 	$(".daily").hide("fast");
-	 	 	$(".weekly").hide("fast");
-	 	 	$(".monthly").hide("fast");
-	 	 	$(".yearly").show("fast");
-		});
-	});
+  //Recurrence tab section show and hide
+  $(document).ready(function () {
+    $(".daily, .weekly, .monthly, .yearly").hide("fast");
+
+    $("#once").click(function () {
+      $(".once").show("fast");
+      $(".daily, .weekly, .monthly, .yearly, .daily-everyday, .daily-weekday").hide("fast");
+
+    });
+    $("#daily").click(function () {
+      $(".once").hide("fast");
+      $(".daily").show("fast");
+      $(".weekly").hide("fast");
+      $(".monthly").hide("fast");
+      $(".yearly").hide("fast");
+      $('.daily-everyday').show("fast");
+    });
+    $("#weekly").click(function () {
+      $(".once").hide("fast");
+      $(".daily").hide("fast");
+      $(".weekly").show("fast");
+      $(".monthly").hide("fast");
+      $(".yearly").hide("fast");
+    });
+    $("#monthly").click(function () {
+      $(".once").hide("fast");
+      $(".daily").hide("fast");
+      $(".weekly").hide("fast");
+      $(".monthly").show("fast");
+      $(".yearly").hide("fast");
+    });
+    $("#yearly").click(function () {
+      $(".once").hide("fast");
+      $(".daily").hide("fast");
+      $(".weekly").hide("fast");
+      $(".monthly").hide("fast");
+      $(".yearly").show("fast");
+    });
+  });
 
   //Monthly recurrence radio button active or not
-  $("#ddNumberedDays").click(function(){
+  $("#every_weekday").click(function () {
+    $('#days').attr('disabled', 'disabled');
+  });
+  
+  $("#every").click(function (){
+    $('#days').removeAttr('disabled');
+  });
+
+  $("#ddNumberedDays").click(function () {
     $("#ddModifierday_value").attr("disabled", "disabled");
     $('#ddTypedDays').attr('disabled', 'disabled');
   });
-  $("#ddModifierday").click(function(){
+  $("#ddModifierday").click(function () {
     $('#ddModifierday_value').removeAttr('disabled');
     $('#ddTypedDays').removeAttr('disabled');
     $('#ddNumberedDays_num').attr('disabled', 'disabled');
   });
 
   //Yearly recurrence radio button active or not
-  $("#ddYearModifier").click(function(){
+  $("#ddYearModifier").click(function () {
     $("#yearNum").attr("disabled", "disabled");
     $('#ddTypedYearlyDays').attr('disabled', 'disabled');
     $('#yearlymonths').attr('disabled', 'disabled');
@@ -120,37 +132,30 @@
     $('#ddnumbereddaysmonthly').removeAttr('disabled');
   });
 
-  $("#ddYearModifierSecond").click(function(){
+  $("#ddYearModifierSecond").click(function () {
     $("#months").attr("disabled", "disabled");
     $('#ddnumbereddaysmonthly').attr('disabled', 'disabled');
     $("#yearNum").removeAttr('disabled');
     $('#ddTypedYearlyDays').removeAttr('disabled');
     $('#yearlymonths').removeAttr('disabled');
   });
-  
+
 
   //Range recurrence radio button active or not
-  $("#noend_date").click(function(){
+  $("#noend_date").click(function () {
     $("#end_Date").attr("disabled", "disabled");
   });
-  $("#ends").click(function(){
+  $("#ends").click(function () {
     $('#end_Date').removeAttr('disabled');
   });
 
   /*datwpicker*/
   jQuery('.mydatepicker').datepicker({
-      format: 'dd-mm',
-      maxViewMode:"date",
-      maxViewMode:"months"
-    });
-  // jQuery('#datepicker-autoclose').datepicker({
-  //     autoclose: true,
-  //     todayHighlight: true,
-  //     // maxViewMode:"months",
-  //     // // minViewMode:"years",
-  //     // format: "MM dd"
-  //     // minViewMode: "years"
-  // });
+    format: 'dd-mm',
+    maxViewMode: "date",
+    maxViewMode: "months"
+  });
+
 </script>
 </body>
 

@@ -205,7 +205,7 @@ select option {
     background-image: none;
 }
 .btn-secondary {
-    color: #fffff;
+    color: #ffffff;
     background-color: #ff8549;
     border-color: #ff8549;
 }
@@ -237,10 +237,41 @@ select option {
     background-color: #a6a6a6;
     color: #2f2f2f;
 }
-.picker-switch{
-	display: none !important;
+.modal-footer {
+    background: #132539;
 }
+.modal {
+    overflow: auto;
+    overflow-y: scroll;
+}
+/* .fo-table .table thead th {
+	border: 1px solid #ffffff;
+} */
+.table-dark .dark-black{
+    background-color: #223144 !important;
+    border: 1px solid #ffffff;
+}
+.fo-table .table thead th.tb-h {
+	border: 1px solid #ffffff;
+	border-left-width: 0;
+	border-top-width: 0;
+}
+.table-responsive.fo-table.table-h tbody tr {
+	background: #bfbbbb70;
+	border-bottom: 1px solid #ffff;
+}
+
+.table-sm td {
+    padding: .3rem !important;
+}
+.table-responsive.fo-table.table-h {
+    min-height: 250px;
+    background-color: #9c9c9c70;
+    border: 1px solid #ffffff;
+}
+
 /* input fields yellow color end*/
+
 
 /* Bootstrap form control */
 /* select 2 START */
