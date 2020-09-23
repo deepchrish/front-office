@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <?php include('./components/note/note-modal.php'); ?>
-<?php include('./components/call/call-modal.php'); ?>
+<?php include('./components/master/master-modal.php'); ?>
 <?php include('./components/history/history-modal.php'); ?>
 <!-- Bread crumb and right sidebar toggle -->
 <div class="page-breadcrumb">
@@ -19,11 +19,10 @@
             <!-- <a class="btn fo-btn-primary" href="create-contact.php"><i class="mdi mdi-plus"></i>Create contact</a> -->
             <div class="d-none d-lg-inline-block">
                 <ul class="mb-0 fo-shortcut">
-                    <li><a href="#"><i class="mdi mdi-checkbox-marked-outline"></i><span>To-Do</span></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#addcall"><i class="mdi mdi-phone"></i><span>Call</span></a></li>
-                    <li><a href="#"><i class="mdi mdi-calendar-blank"></i><span>Meeting</span></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#addnote"><i
-                                class="mdi mdi-pencil-box-outline"></i><span>Note</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#master-module"><i class="mdi mdi-checkbox-marked-outline"></i><span>To-Do</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#master-module"><i class="mdi mdi-phone"></i><span>Call</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#master-module"><i class="mdi mdi-calendar-blank"></i><span>Meeting</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#addnote"><i class="mdi mdi-pencil-box-outline"></i><span>Note</span></a></li>
                     <li><a href="#" data-toggle="modal" data-target="#addhistory"><i class="mdi mdi-history"></i><span>History</span></a></li>
                     <li><a href="mailto:abc@abc.com"><i class="mdi mdi-email-outline"></i><span>E-Mail</span></a></li>
                 </ul>
@@ -43,10 +42,10 @@
                     <a class="dropdown-item" href="#">Company</a>
                     <a class="dropdown-item" href="#">Opportunity</a>
                     <div class="dropdown-divider m-0"></div>
-                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addcall">Call</a>
-                    <a class="dropdown-item" href="#">Meeting</a>
-                    <a class="dropdown-item" href="#">To-Do</a>
-                    <a class="dropdown-item" href="#">Other</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#master-module">Call</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#master-module">Meeting</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#master-module">To-Do</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#master-module">Other</a>
                     <div class="dropdown-divider m-0"></div>
                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addnote">Note</a>
                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addhistory">History</a>
@@ -55,7 +54,7 @@
                     <a class="dropdown-item disabled" href="#">Division</a>
                     <div class="dropdown-divider m-0"></div>
                     <a class="dropdown-item" href="#">Document</a>
-                    <a class="dropdown-item" href="#">E-mail message</a>
+                    <a class="dropdown-item" href="mailto:abc@abc.com">E-mail message</a>
                     <div class="dropdown-divider m-0"></div>
                     <a class="dropdown-item" href="#">Letter</a>
                 </div>
