@@ -46,7 +46,7 @@
                             <div class="form-row">
                                 <div class="form-group col">
                                     <label for="startdate">Start Date</label>
-                                    <input type="date" class="form-control" id="startdate" placeholder="Date">
+                                    <input type="date" class="form-control datepicker" id="startdate" placeholder="Date">
                                 </div>
                                 <div class="form-group col">
                                     <label for="enddate">End Date</label>
