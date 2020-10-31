@@ -709,7 +709,21 @@ select option {
     border-color: #ff8549;
     color: #ffffff;
 }
-
+ /* timepicker */
+ .ui-timepicker-select{
+	display: block;
+	background: #344153;
+    font-size: 14px;
+    padding: .3rem .5rem;
+	position: relative;
+	line-height: 1.5;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	height: calc(2.1rem + 1px);
+	width: 100%;
+    color: #ffff00;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ }
 
 /* Responsive */
 

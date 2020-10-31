@@ -29,6 +29,7 @@
 <script src="assets/libs/jquery-minicolors/jquery.minicolors.min.js"></script>
 <!-- Date picker js-->
 <script src="assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/timepicker@1.13.15/jquery.timepicker.js'></script>
 <script>
   /*select2*/
   $(".select2").select2();
@@ -42,7 +43,7 @@
   var quill = new Quill('#attch_editor', {
     theme: 'snow'
   });
-/*History editor*/
+  /*History editor*/
   var quill = new Quill('#history-editor', {
     theme: 'snow'
   });
@@ -108,8 +109,8 @@
   $("#every_weekday").click(function () {
     $('#days').attr('disabled', 'disabled');
   });
-  
-  $("#every").click(function (){
+
+  $("#every").click(function () {
     $('#days').removeAttr('disabled');
   });
 
@@ -156,6 +157,15 @@
     maxViewMode: "months"
   });
 
+  // timepicker
+  $(function () {
+    $('.addtime').timepicker();
+    // Comment out the following line and you will see that normally the event will fire even if selecting the same time again
+    $('.addtime').timepicker('option', {
+      useSelect: true,
+      step: 10,
+    });
+  });
 </script>
 </body>
 

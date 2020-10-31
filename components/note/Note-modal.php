@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group col">
                             <label for="addtime">Time</label>
-                            <input type="time" class="form-control" id="addtime" placeholder="Time">
+                            <input type="time" class="form-control addtime" id="addtime" placeholder="Time">
                         </div>
                     </div>
                     <div class="form-row">

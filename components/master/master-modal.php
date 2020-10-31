@@ -3,7 +3,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Schedule Activity</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <span
+                        aria-hidden="true">&times;</span></button>
             </div>
 
             <div class="message-show">
@@ -46,7 +47,8 @@
                             <div class="form-row">
                                 <div class="form-group col">
                                     <label for="startdate">Start Date</label>
-                                    <input type="date" class="form-control datepicker" id="startdate" placeholder="Date">
+                                    <input type="date" class="form-control datepicker" id="startdate"
+                                        placeholder="Date">
                                 </div>
                                 <div class="form-group col">
                                     <label for="enddate">End Date</label>
@@ -60,7 +62,7 @@
                                 </div>
                                 <div class="form-group col">
                                     <label for="endtime">End Time</label>
-                                    <input type="time" class="form-control" id="endtime" placeholder="Time">
+                                    <input type="time" class="form-control addtime" id="endtime" placeholder="Time">
                                 </div>
                             </div>
                             <div class="form-row">

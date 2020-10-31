@@ -19,6 +19,7 @@
 
     <!-- Date picker CSS-->
    <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+   <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/timepicker@1.13.15/jquery.timepicker.css'>
     <!-- Custom CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
